@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "SIPA!",
+    "slug": "sipa-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "sipa",
+    "userInterfaceStyle": "dark",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.sipa.training" },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#0a0a0c"
+      },
+      "package": "com.sipa.training",
+      "usesCleartextTraffic": false
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-image.png",
+          "imageWidth": 240,
+          "resizeMode": "contain",
+          "backgroundColor": "#0a0a0c",
+          "dark": { "backgroundColor": "#0a0a0c", "image": "./assets/images/splash-image.png" }
+        }
+      ],
+      "expo-font",
+      "expo-status-bar",
+      "@react-native-vector-icons/ionicons"
+    ],
+    "experiments": { "typedRoutes": true },
+    "backgroundColor": "#0a0a0c"
+  }
+}
